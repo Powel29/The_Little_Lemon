@@ -1,70 +1,144 @@
-# Getting Started with Create React App
+# 🍋 The Little Lemon — Restaurant Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![License](https://img.shields.io/badge/License-MIT-green)
+![GitHub repo size](https://img.shields.io/github/repo-size/Powel29/The_Little_Lemon)
+![npm](https://img.shields.io/npm/v/react)
 
-## Available Scripts
+A responsive React single-page application (SPA) that showcases **Little Lemon**, a fictional Mediterranean restaurant.  
+It includes interactive pages for browsing the menu, exploring services, booking tables, and viewing order confirmations — built to demonstrate modern UI/UX and React best practices.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🧭 Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Setup & Installation](#setup--installation)
+- [Screenshots](#screenshots)
+- [Future Enhancements](#future-enhancements)
+- [Author](#author)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📝 Overview
 
-### `npm test`
+The **Little Lemon** web app is a front-end project developed using **React** and **React Router**.  
+It highlights component-driven architecture, modular styling, and client-side navigation for a seamless user experience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✨ Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🧭 Navigation
+- Responsive **navbar** with a **hamburger sidebar** for mobile devices.
+- **React Router v6** for smooth, client-side routing across multiple pages.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🍽️ Menu System
+- Displays weekly specials sourced from a static `recipes.js` data file.
+- Each menu item includes an image, description, and price.
+- “**Order Now**” button triggers **SweetAlert2** confirmation modals.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📅 Booking System
+- A booking form for date, time, number of guests, and occasion.
+- On submission, navigates to a **confirmation page**.
+- Structured and ready for backend integration.
 
-### `npm run eject`
+### 🧑‍🍳 Services
+- Showcases various offerings — Dine-In, Takeout, Delivery, Catering, Events, and Cooking Classes.
+- Includes **customer testimonials** with ratings and flowing layout.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 💬 Footer & Contact
+- Contains navigation links and **social media handles** (Facebook, Instagram, Twitter).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🧪 Testing
+- Unit testing setup with **Jest** and **React Testing Library**.
+- `App.test.js` included as a starter example.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ⚙️ Tech Stack
 
-## Learn More
+| Category | Tools |
+|-----------|-------|
+| **Frontend** | React 19, React Router v6 |
+| **UI / UX** | CSS3 (custom responsive design), Lucide React Icons |
+| **Alerts / Modals** | SweetAlert2 |
+| **Testing** | Jest, React Testing Library |
+| **Tooling** | Create React App (CRA), npm scripts |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🗂️ Project Structure
 
-### Code Splitting
+```bash
+The_Little_Lemon/
+├─ public/
+│   ├─ index.html
+│   ├─ manifest.json
+│   └─ favicon.ico
+└─ src/
+    ├─ index.js
+    ├─ App.js / App.css / App.test.js
+    ├─ recipes.js
+    ├─ reportWebVitals.js
+    ├─ setupTests.js
+    ├─ components/
+    │   ├─ Navbar.js
+    │   ├─ Header.js
+    │   ├─ Main.js
+    │   ├─ Footer.js
+    │   ├─ About.js
+    │   ├─ Services.js
+    │   ├─ Menu.js
+    │   ├─ Booking/
+    │   │   ├─ Booking.js
+    │   │   └─ BookingForm.js
+    │   ├─ ConfirmedBooking.js
+    │   └─ Login.js
+    └─ images/
+```
+## 🧩 Setup & Installation
+Clone the repository
+```bash
+git clone https://github.com/Powel29/The_Little_Lemon.git
+cd The_Little_Lemon
+```
+Install dependencies
+```bash
+npm install
+```
+Start the development server
+```bash
+npm start
+```
+View in browser
+```bash
+http://localhost:3000
+```
+## 🖼️ Screenshots
+- Home Page
+  
+![Home Page](src/images/Homepage.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Reservation Page
 
-### Analyzing the Bundle Size
+![Booking Form](src/images/Reservationpage.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🚀 Future Enhancements
+- 🔗 Integrate a backend API for booking and menu management
+- 🧾 Add form validation and error handling
+- 👤 Implement login authentication
+- 🦻 Improve accessibility (ARIA labels, keyboard navigation)
+- 🖼️ Add image optimization and lazy loading
+- 📱 Add animations and transitions for smoother UX
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 👨‍💻 Author
+Powel Lawrence Lewis
 
-### Deployment
+Student Project for Coursera Front-End Development Course
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
