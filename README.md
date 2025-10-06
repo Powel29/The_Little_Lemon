@@ -118,7 +118,13 @@ View in browser
 ```bash
 http://localhost:3000
 ```
+## 🖼️ Screenshots
+- Home Page
+  
 ![Home Page](src/images/Homepage.png)
+
+- Reservation Page
+
 ![Booking Form](src/images/Reservationpage.png)
 
 
@@ -135,5 +141,5 @@ http://localhost:3000
 ## 👨‍💻 Author
 Powel Lawrence Lewis
 
-Student Project for Coursera UX/UI & Front-End Development Course
+Student Project for Coursera Front-End Development Course
 
