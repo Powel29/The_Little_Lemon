@@ -16,7 +16,6 @@ It includes interactive pages for browsing the menu, exploring services, booking
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [Setup & Installation](#setup--installation)
-- [Testing](#testing)
 - [Screenshots](#screenshots)
 - [Future Enhancements](#future-enhancements)
 - [Author](#author)
