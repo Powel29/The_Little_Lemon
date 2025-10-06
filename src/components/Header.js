@@ -24,7 +24,7 @@ const Header = () => {
         </div>
         {/* banner image sits in the right column */}
         <div className="banner-img">
-          <img src={bannerImg} alt="" />
+          <img src={bannerImg} alt="Little Lemon restaurant banner" />
         </div>
       </header>
       {/* Render menu cards on the home page below the header */}
